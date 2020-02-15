@@ -92,4 +92,4 @@ class ImmoScraperSpider(scrapy.Spider):
 # process.crawl(ImmoScraperSpider)
 # process.start()
 
-# scrapy crawl immo_scraper -o flats_berlin.csv -s JOBDIR=crawls/immo_scraper
+# scrapy crawl immo_scraper -o flats_berlin_2.csv -s JOBDIR=crawls/immo_scraper
