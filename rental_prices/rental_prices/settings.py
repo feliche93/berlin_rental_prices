@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for berlin_rental_prices project
+# Scrapy settings for rental_prices project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,14 +9,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'berlin_rental_prices'
+BOT_NAME = 'rental_prices'
 
-SPIDER_MODULES = ['berlin_rental_prices.spiders']
-NEWSPIDER_MODULE = 'berlin_rental_prices.spiders'
+SPIDER_MODULES = ['rental_prices.spiders']
+NEWSPIDER_MODULE = 'rental_prices.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'berlin_rental_prices (+http://www.yourdomain.com)'
+#USER_AGENT = 'rental_prices (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -47,13 +47,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'berlin_rental_prices.middlewares.BerlinRentalPricesSpiderMiddleware': 543,
+#    'rental_prices.middlewares.RentalPricesSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'berlin_rental_prices.middlewares.BerlinRentalPricesDownloaderMiddleware': 543,
+#    'rental_prices.middlewares.RentalPricesDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -65,7 +65,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'berlin_rental_prices.pipelines.BerlinRentalPricesPipeline': 300,
+#    'rental_prices.pipelines.RentalPricesPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
