@@ -10,7 +10,9 @@ class Immobilienscout24Spider(scrapy.Spider):
     name = 'immobilienscout24'
     allowed_domains = ['immobilienscout24.de']
     start_urls = [
-        'https://www.immobilienscout24.de/Suche/de/berlin/berlin/wohnung-mieten']
+        'https://www.immobilienscout24.de/Suche/de/berlin/berlin/wohnung-mieten?sorting=2'
+        # 'https://www.immobilienscout24.de/Suche/de/berlin/berlin/wohnung-mieten'
+    ]
     custom_settings = {
         'ITEM_PIPELINES': {
             'rental_prices.pipelines.DuplicatesPipeline': 150,
